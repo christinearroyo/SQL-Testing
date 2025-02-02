@@ -1,0 +1,10 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "Students" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"first_name"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+INSERT INTO "Students" VALUES (2004,'Sadiasa, Avegail');
+INSERT INTO "Students" VALUES (2005,'Cabanit, Rebecca');
+INSERT INTO "Students" VALUES (2006,'Arroyo, Christine');
+COMMIT;
